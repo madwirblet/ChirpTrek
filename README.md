@@ -93,5 +93,5 @@ Enable the XR Interaction Simulator in Project Settings.
 - Madelyne Wirbel
 - Matthew Diaz
 - Ashley James
-- Sophie Shaw
+- Sophie Shah
 - Gavin Schroeder

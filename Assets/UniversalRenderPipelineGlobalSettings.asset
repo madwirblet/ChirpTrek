@@ -184,7 +184,7 @@ MonoBehaviour:
       type: {class: URPShaderStrippingSetting, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_Version: 0
-        m_StripUnusedPostProcessingVariants: 0
+        m_StripUnusedPostProcessingVariants: 1
         m_StripUnusedVariants: 1
         m_StripScreenCoordOverrideVariants: 1
     - rid: 3784685089465565442
@@ -334,7 +334,7 @@ MonoBehaviour:
       type: {class: LightmapSamplingSettings, ns: UnityEngine.Rendering, asm: Unity.RenderPipelines.Core.Runtime}
       data:
         m_Version: 1
-        m_UseBicubicLightmapSampling: 0
+        m_UseBicubicLightmapSampling: 1
     - rid: 3784685089465565459
       type: {class: ProbeVolumeBakingResources, ns: UnityEngine.Rendering, asm: Unity.RenderPipelines.Core.Runtime}
       data:

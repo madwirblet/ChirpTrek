@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - CinemachineTarget
+  - lb_bird
+  - lb_groundTarget
+  - Seed
   layers:
   - Default
   - TransparentFX

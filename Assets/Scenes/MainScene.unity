@@ -198,6 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 55486461}
   - component: {fileID: 55486460}
+  - component: {fileID: 55486462}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -278,13 +279,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55486459}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.8428444, y: 0.06527367, z: -0.45826888, w: 0.27448553}
+  m_LocalRotation: {x: 0.7095459, y: 0.20937847, z: -0.41283375, w: 0.53129435}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 148.498, y: 59.767998, z: 9.556}
+  m_LocalEulerAnglesHint: {x: 112.054, y: 75.409, z: 22.145996}
+--- !u!114 &55486462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55486459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!4 &59823511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400124, guid: 459aeb780b3c43748b5a2bb13e1809c8, type: 3}
@@ -1934,19 +1964,19 @@ MonoBehaviour:
 
     Birds spread their wings to soar on warm air currents.
 
-    
+
 
     Some
     birds mate for life, such as swans.
 
-    
 
-    Birds often sing to mark their
-    territory.
 
-    
+    Birds often sing to mark their territory.
 
-    Parent birds take turns keeping eggs warm.'
+
+
+    Parent
+    birds take turns keeping eggs warm.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2269,15 +2299,15 @@ MonoBehaviour:
 
     Birds use their beaks instead of teeth to eat.
 
-    
+
 
     Many
     birds can see ultraviolet light, which humans cannot see.
 
-    
 
-    Some birds
-    migrate thousands of miles each year.'
+
+    Some birds migrate
+    thousands of miles each year.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3886,6 +3916,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4baceba23587d42863172c6bcd1fd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  popupUI: {fileID: 0}
+  popupText: {fileID: 0}
+  message: 
 --- !u!114 &1611613939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4669,17 +4702,17 @@ MonoBehaviour:
 
     Birds are the only animals with feathers.
 
-    
+
 
     There
     are over 10,000 species of birds in the world.
 
-    
+
 
     Birds have lightweight
     bones that help them fly.
 
-    
+
 
     Most birds lay eggs with hard shells.'
   m_isRightToLeft: 0

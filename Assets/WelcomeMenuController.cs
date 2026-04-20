@@ -1,33 +1,58 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PressAnyButtonToContinue : MonoBehaviour
+public class PressToContinue : MonoBehaviour
 {
     public GameObject welcomeMenu;
     public GameObject nextPanel;
+    public InputActionReference submitAction;
 
-    private InputAction anyButtonAction;
-
-    void OnEnable()
+    private void OnEnable()
     {
-        anyButtonAction = new InputAction(type: InputActionType.Button, binding: "/*/<button>");
-        anyButtonAction.performed += OnAnyButtonPressed;
-        anyButtonAction.Enable();
-    }
-
-    void OnDisable()
-    {
-        if (anyButtonAction != null)
+        if (submitAction != null)
         {
-            anyButtonAction.performed -= OnAnyButtonPressed;
-            anyButtonAction.Disable();
-            anyButtonAction.Dispose();
+            submitAction.action.performed += OnSubmit;
+            submitAction.action.Enable();
+            Debug.Log($"Action enabled: {submitAction.action.enabled}");
         }
     }
 
-    private void OnAnyButtonPressed(InputAction.CallbackContext ctx)
+    private void OnDisable()
     {
-        if (nextPanel != null) nextPanel.SetActive(true);
-        if (welcomeMenu != null) welcomeMenu.SetActive(false);
+        if (submitAction != null)
+        {
+            submitAction.action.performed -= OnSubmit;
+            submitAction.action.Disable();
+        }
+    }
+
+    // Temporary keyboard testing
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log("Space pressed - triggering transition");
+            TriggerTransition();
+        }
+    }
+
+    private void OnSubmit(InputAction.CallbackContext ctx)
+    {
+        Debug.Log("OnSubmit called!");
+        TriggerTransition();
+    }
+
+    private void TriggerTransition()
+    {
+        if (nextPanel != null)
+        {
+            nextPanel.SetActive(true);
+            Debug.Log("Next panel activated");
+        }
+        if (welcomeMenu != null)
+        {
+            welcomeMenu.SetActive(false);
+            Debug.Log("Welcome menu deactivated");
+        }
     }
 }
